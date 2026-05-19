@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURORA — Music Platform | VOIDLAB Case Study</title>
+  <meta name="description" content="Revolutionary UI/UX design for AURORA, a streaming music platform. Digital experience design, interaction design, and motion graphics." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #0a0a14 0%, #0c0e1a 100%);
+      color: #f5f3ff;
+      font-family: 'Syne', sans-serif;
+      min-height: 100vh;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #00d9ff;
+      text-decoration: none;
+      margin-bottom: 3rem;
+      font-size: 0.9rem;
+      transition: gap 0.3s;
+    }
+    .back-link:hover { gap: 1rem; }
+    .back-link::before { content: '←'; }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 0%, #33f0ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle { color: #8892a6; font-size: 1.2rem; margin-bottom: 2rem; }
+
+    .hero-image {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, #1a1f3a 0%, #111827 100%);
+      border-radius: 12px;
+      margin: 3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 217, 255, 0.1);
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin: 3rem 0;
+    }
+    .content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #00d9ff;
+    }
+    .content p {
+      line-height: 1.8;
+      color: #b0b0c0;
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+    .tag {
+      padding: 0.6rem 1rem;
+      background: rgba(0, 217, 255, 0.1);
+      border: 1px solid rgba(0, 217, 255, 0.2);
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: #00d9ff;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #00d9ff, #33f0ff);
+      color: #0a0a14;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 700;
+      transition: transform 0.3s;
+    }
+    .cta:hover { transform: translateY(-3px); }
+
+    @media (max-width: 768px) {
+      .content { grid-template-columns: 1fr; }
+      .container { padding: 2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">Back to Portfolio</a>
+    
+    <h1>AURORA — Music Platform</h1>
+    <p class="subtitle">Crafting an intuitive digital experience for music discovery and streaming</p>
+    
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=400&fit=crop&q=80" alt="AURORA Music Platform" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;" />
+    </div>
+
+    <div class="content">
+      <div>
+        <h2>The Challenge</h2>
+        <p>AURORA needed a next-generation streaming interface that made music discovery effortless. The platform had to balance powerful features with simplicity, encouraging users to spend more time exploring and enjoying music.</p>
+      </div>
+      <div>
+        <h2>Our Solution</h2>
+        <p>We designed an elegant, gesture-based interface with immersive album artwork visualization, intelligent playlist recommendations, and smooth micro-interactions that made every action feel natural and delightful.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>
+        <h2>Scope</h2>
+        <ul style="color: #b0b0c0; line-height: 2;">
+          <li>✓ User Research & Insights</li>
+          <li>✓ Wireframing & Prototyping</li>
+          <li>✓ UI Design & Interaction</li>
+          <li>✓ Motion Design & Animation</li>
+          <li>✓ Developer Handoff</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Results</h2>
+        <p>The new interface resulted in a 58% increase in daily active users and 2.3x improvement in playlist sharing. User engagement time increased by 43%, demonstrating the power of thoughtful design paired with powerful technology.</p>
+        <div class="tags">
+          <span class="tag">UI/UX Design</span>
+          <span class="tag">Motion Design</span>
+          <span class="tag">Interaction Design</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contact" class="cta">Start Your Project</a>
+  </div>
+</body>
+</html>

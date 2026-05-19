@@ -1,0 +1,33 @@
+# Netlify Configuration for VOIDLAB
+
+[build]
+  publish = "public"
+  command = "echo 'No build needed - static site'"
+
+# Redirects
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache for static assets
+[[headers]]
+  for = "/*.{js,css,svg,png,jpg,jpeg,gif,ico,woff,woff2,ttf}"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Gzip compression
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Encoding = "gzip"
