@@ -1,18 +1,33 @@
 {
   "name": "voidlabs",
   "version": "1.0.0",
-  "description": "VOIDLABS - Modern web presence",
+  "description": "VOIDLABS - Creative Studio. Modern web design, brand identity, and digital experiences.",
+  "author": "VOIDLAB Creative Studio",
+  "license": "MIT",
+  "homepage": "https://sahilsoftdotin.github.io/voidlabs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SahilSoftdotin/voidlabs"
+  },
+  "keywords": [
+    "creative",
+    "design",
+    "studio",
+    "brand",
+    "identity",
+    "ui",
+    "ux"
+  ],
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build"
+    "deploy": "npm run build",
+    "test": "node scripts/test.js",
+    "test:full": "npm run lint && npm run build && node scripts/test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "module",
   "dependencies": {
     "next": "^16.2.6",
@@ -26,7 +41,7 @@
     "autoprefixer": "^10.5.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.6",
-    "postcss": "^8.5.14",
+    "postcss": "^8.5.15",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3"
   }

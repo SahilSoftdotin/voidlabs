@@ -3,5 +3,6 @@ Allow: /
 Disallow: /.git
 Disallow: /.next
 Disallow: /node_modules
+Disallow: /_next/
 
-Sitemap: https://voidlab.com/sitemap.xml
+Sitemap: https://sahilsoftdotin.github.io/voidlabs/sitemap.xml
