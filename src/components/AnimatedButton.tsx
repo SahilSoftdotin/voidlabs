@@ -39,7 +39,7 @@ export default function AnimatedButton({
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ type: 'spring', stiffness: 300, damping: 24 }}
+      transition={{ duration: 0.5 }}
     >
       {/* Animated background shine effect */}
       <motion.div

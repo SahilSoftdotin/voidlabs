@@ -23,9 +23,7 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: 'spring',
-      stiffness: 100,
-      damping: 30,
+      duration: 0.6,
     },
   },
 };
