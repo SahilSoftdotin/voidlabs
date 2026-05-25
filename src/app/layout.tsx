@@ -62,9 +62,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/voidlabs/favicon.ico" />
-        <link rel="apple-touch-icon" href="/voidlabs/apple-touch-icon.png" />
-        <link rel="manifest" href="/voidlabs/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

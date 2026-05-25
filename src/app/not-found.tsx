@@ -12,13 +12,13 @@ export default function NotFound() {
 
         <nav className="flex flex-wrap gap-4 justify-center mt-12">
           <Link
-            href="/voidlabs/"
+            href="/"
             className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors duration-200"
           >
             Back to Home
           </Link>
           <Link
-            href="/voidlabs/projects/void"
+            href="/projects/void"
             className="px-6 py-3 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-semibold rounded-lg transition-colors duration-200"
           >
             View Projects

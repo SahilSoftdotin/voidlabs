@@ -1,2 +1,1 @@
-export { useChat } from './useChat';
-export { useScrollAnimation, useElementInView } from './useScrollAnimation';
+// Custom hooks (add new hooks here as needed)

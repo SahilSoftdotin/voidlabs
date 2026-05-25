@@ -66,7 +66,7 @@ export default function HomePage() {
             className="flex flex-wrap gap-4 justify-center mt-12"
           >
             <AnimatedButton
-              href="/voidlabs/projects"
+              href="/projects"
               variant="primary"
               className="animate-glow"
             >
