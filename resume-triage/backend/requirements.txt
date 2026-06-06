@@ -1,0 +1,19 @@
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Data / persistence
+SQLAlchemy==2.0.36
+pydantic==2.10.4
+pydantic-settings==2.7.0
+# Postgres driver (optional — only needed when DATABASE_URL points at Postgres).
+# psycopg[binary]==3.2.3
+
+# Resume parsing
+pypdf==5.1.0
+python-docx==1.1.2
+
+# LLM (semantic scoring + interview questions). Optional at runtime: the app
+# falls back to the deterministic mock scorer when no API key is configured.
+anthropic==0.69.0

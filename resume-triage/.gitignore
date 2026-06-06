@@ -1,0 +1,20 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets & local config
+.env
+backend/.env
+
+# Storage (uploaded resumes, sqlite dbs) — keep the dir, ignore contents
+backend/storage/*
+!backend/storage/.gitkeep
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
