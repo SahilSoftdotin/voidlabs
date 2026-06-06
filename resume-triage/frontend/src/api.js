@@ -1,5 +1,10 @@
 // Thin API client for the triage backend.
+import { demoApi } from "./demoData.js";
+
 const BASE = "/api";
+// Standalone preview build (VITE_DEMO=1) swaps in an in-memory mock backend so
+// the UI is fully clickable from a single static HTML file with no server.
+const DEMO = import.meta.env.VITE_DEMO === "1";
 
 async function req(path, opts = {}) {
   const res = await fetch(BASE + path, opts);
@@ -14,7 +19,7 @@ async function req(path, opts = {}) {
   return ct.includes("application/json") ? res.json() : res.text();
 }
 
-export const api = {
+export const api = DEMO ? demoApi : {
   health: () => req("/health"),
   defaultRubric: () => req("/default-rubric"),
   listJobs: () => req("/jobs"),
